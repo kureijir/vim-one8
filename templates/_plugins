@@ -1,0 +1,23 @@
+# vim: set ft=colortemplate fdm=marker :
+
+# Plugin specific groups
+#if get(g:, "@optionprefix_plugin_hi_groups", 0)
+
+# ALE (Asynchronous Lint Engine) {{{
+ALEWarningSign                    hue_6_2         none
+ALEErrorSign                      hue_5           none
+# }}}
+# Neovim NERDTree Background fix {{{
+NERDTreeFile                      mono_1          none
+# }}}
+# Vim-signify/vim-gitgutter {{{
+SignifySignAdd                    hue_4           none
+SignifySignChange                 hue_6_2         none
+SignifySignDelete                 hue_5           none
+
+GitGutterAdd                  ->  SignifySignAdd
+GitGutterChange               ->  SignifySignChange
+GitGutterDelete               ->  SignifySignDelete
+# }}}
+
+#endif

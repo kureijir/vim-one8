@@ -1,0 +1,367 @@
+# vim: set ft=colortemplate fdm=marker :
+
+# Filetype specific groups
+#if get(g:, "@optionprefix_filetype_hi_groups", 0)
+
+# Vim-help {{{
+helpCommand                       hue_6_2         none
+helpExample                       hue_6_2         none
+helpHeader                        mono_1          none            bold
+helpSectionDelim                  mono_3          none
+# }}}
+# Diff {{{
+DiffAdded                         hue_4           visual_grey
+DiffFile                          hue_5           visual_grey
+DiffNewFile                       hue_4           visual_grey
+DiffLine                          hue_2           visual_grey
+DiffRemoved                       hue_5           visual_grey
+# }}}
+# Asciidoc {{{
+asciidocListingBlock              mono_2          none
+# }}}
+# C/C++ {{{
+cInclude                          hue_3           none
+cPreCondit                        hue_3           none
+cPreConditMatch                   hue_3           none
+
+cType                             hue_3           none
+cStorageClass                     hue_3           none
+cStructure                        hue_3           none
+cOperator                         hue_3           none
+cStatement                        hue_3           none
+cTODO                             hue_3           none
+cConstant                         hue_6           none
+cSpecial                          hue_1           none
+cSpecialCharacter                 hue_1           none
+cString                           hue_4           none
+
+cppType                           hue_3           none
+cppStorageClass                   hue_3           none
+cppStructure                      hue_3           none
+cppModifier                       hue_3           none
+cppOperator                       hue_3           none
+cppAccess                         hue_3           none
+cppStatement                      hue_3           none
+cppConstant                       hue_5           none
+cCppString                        hue_4           none
+# }}}
+# Cucumber {{{
+cucumberGiven                     hue_2           none
+cucumberWhen                      hue_2           none
+cucumberWhenAnd                   hue_2           none
+cucumberThen                      hue_2           none
+cucumberThenAnd                   hue_2           none
+cucumberUnparsed                  hue_6           none
+cucumberFeature                   hue_5           none            bold
+cucumberBackground                hue_3           none            bold
+cucumberScenario                  hue_3           none            bold
+cucumberScenarioOutline           hue_3           none            bold
+cucumberTags                      mono_3          none            bold
+cucumberDelimiter                 mono_3          none            bold
+# }}}
+# CSS/Sass {{{
+cssAttrComma                      hue_3           none
+cssAttributeSelector              hue_4           none
+cssBraces                         mono_2          none
+cssClassName                      hue_6           none
+cssClassNameDot                   hue_6           none
+cssDefinition                     hue_3           none
+cssFontAttr                       hue_6           none
+cssFontDescriptor                 hue_3           none
+cssFunctionName                   hue_2           none
+cssIdentifier                     hue_2           none
+cssImportant                      hue_3           none
+cssInclude                        mono_1          none
+cssIncludeKeyword                 hue_3           none
+cssMediaType                      hue_6           none
+cssProp                           hue_1           none
+cssPseudoClassId                  hue_6           none
+cssSelectorOp                     hue_3           none
+cssSelectorOp2                    hue_3           none
+cssStringQ                        hue_4           none
+cssStringQQ                       hue_4           none
+cssTagName                        hue_5           none
+cssAttr                           hue_6           none
+
+sassAmpersand                     hue_5           none
+sassClass                         hue_6_2         none
+sassControl                       hue_3           none
+sassExtend                        hue_3           none
+sassFor                           mono_1          none
+sassProperty                      hue_1           none
+sassFunction                      hue_1           none
+sassId                            hue_2           none
+sassInclude                       hue_3           none
+sassMedia                         hue_3           none
+sassMediaOperators                mono_1          none
+sassMixin                         hue_3           none
+sassMixinName                     hue_2           none
+sassMixing                        hue_3           none
+
+scssSelectorName                  hue_6_2         none
+# }}}
+# Elixir {{{
+elixirDocString               ->  Comment
+elixirModuleDefine            ->  Define
+
+elixirAlias                       hue_6_2         none
+elixirAtom                        hue_1           none
+elixirBlockDefinition             hue_3           none
+elixirModuleDeclaration           hue_6           none
+elixirInclude                     hue_5           none
+elixirOperator                    hue_6           none
+# }}}
+# Git {{{
+gitcommitComment                  mono_3          none
+gitcommitUnmerged                 hue_4           none
+gitcommitOnBranch                 none            none
+gitcommitBranch                   hue_3           none
+gitcommitDiscardedType            hue_5           none
+gitcommitSelectedType             hue_4           none
+gitcommitHeader                   none            none
+gitcommitUntrackedFile            hue_1           none
+gitcommitDiscardedFile            hue_5           none
+gitcommitSelectedFile             hue_4           none
+gitcommitUnmergedFile             hue_6_2         none
+gitcommitFile                     none            none
+
+gitcommitNoBranch             ->  gitcommitBranch
+gitcommitUntracked            ->  gitcommitComment
+gitcommitDiscarded            ->  gitcommitComment
+gitcommitSelected             ->  gitcommitComment
+gitcommitDiscardedArrow       ->  gitcommitDiscardedFile
+gitcommitSelectedArrow        ->  gitcommitSelectedFile
+gitcommitUnmergedArrow        ->  gitcommitUnmergedFile
+# }}}
+# Go {{{
+goDeclaration                     hue_3           none
+goField                           hue_5           none
+goMethod                          hue_1           none
+goType                            hue_3           none
+goUnsignedInts                    hue_1           none
+# }}}
+# Haskell {{{
+haskellDeclKeyword                hue_2           none
+haskellType                       hue_4           none
+haskellWhere                      hue_5           none
+haskellImportKeywords             hue_2           none
+haskellOperators                  hue_5           none
+haskellDelimiter                  hue_2           none
+haskellIdentifier                 hue_6           none
+haskellKeyword                    hue_5           none
+haskellNumber                     hue_1           none
+haskellString                     hue_1           none
+# }}}
+# HTML {{{
+htmlArg                           hue_6           none
+htmlTagName                       hue_5           none
+htmlTagN                          hue_5           none
+htmlSpecialTagName                hue_5           none
+htmlTag                           mono_2          none
+htmlEndTag                        mono_2          none
+
+MatchTag                          hue_5           syntax_cursor   underline,bold
+# }}}
+# JavaScript {{{
+javaScriptBraces                  mono_2          none
+javaScriptFunction                hue_3           none
+javaScriptIdentifier              hue_3           none
+javaScriptNull                    hue_6           none
+javaScriptNumber                  hue_6           none
+javaScriptRequire                 hue_1           none
+javaScriptReserved                hue_3           none
+# }}}
+# pangloss/vim-javascript {{{
+jsArrowFunction                   hue_3           none
+jsBraces                          mono_2          none
+jsClassBraces                     mono_2          none
+jsClassKeywords                   hue_3           none
+jsDocParam                        hue_2           none
+jsDocTags                         hue_3           none
+jsFuncBraces                      mono_2          none
+jsFuncCall                        hue_2           none
+jsFuncParens                      mono_2          none
+jsFunction                        hue_3           none
+jsGlobalObjects                   hue_6_2         none
+jsModuleWords                     hue_3           none
+jsModules                         hue_3           none
+jsNoise                           mono_2          none
+jsNull                            hue_6           none
+jsOperator                        hue_3           none
+jsParens                          mono_2          none
+jsStorageClass                    hue_3           none
+jsTemplateBraces                  hue_5_2         none
+jsTemplateVar                     hue_4           none
+jsThis                            hue_5           none
+jsUndefined                       hue_6           none
+jsObjectValue                     hue_2           none
+jsObjectKey                       hue_1           none
+jsReturn                          hue_3           none
+# }}}
+# othree/yajs.vim {{{
+javascriptArrowFunc               hue_3           none
+javascriptClassExtends            hue_3           none
+javascriptClassKeyword            hue_3           none
+javascriptDocNotation             hue_3           none
+javascriptDocParamName            hue_2           none
+javascriptDocTags                 hue_3           none
+javascriptEndColons               mono_3          none
+javascriptExport                  hue_3           none
+javascriptFuncArg                 mono_1          none
+javascriptFuncKeyword             hue_3           none
+javascriptIdentifier              hue_5           none
+javascriptImport                  hue_3           none
+javascriptObjectLabel             mono_1          none
+javascriptOpSymbol                hue_1           none
+javascriptOpSymbols               hue_1           none
+javascriptPropertyName            hue_4           none
+javascriptTemplateSB              hue_5_2         none
+javascriptVariable                hue_3           none
+# }}}
+# CoffeeScript {{{
+coffeeString                      hue_4           none
+# }}}
+# PureScript {{{
+purescriptKeyword                 hue_3           none
+purescriptModuleName              mono_1          none
+purescriptIdentifier              mono_1          none
+purescriptType                    hue_6_2         none
+purescriptTypeVar                 hue_5           none
+purescriptConstructor             hue_5           none
+purescriptOperator                mono_1          none
+# }}}
+# JSON {{{
+jsonCommentError                  mono_1          none
+jsonKeyword                       hue_5           none
+jsonQuote                         mono_3          none
+jsonTrailingCommaError            hue_5           none            reverse
+jsonMissingCommaError             hue_5           none            reverse
+jsonNoQuotesError                 hue_5           none            reverse
+jsonNumError                      hue_5           none            reverse
+jsonString                        hue_4           none
+jsonBoolean                       hue_3           none
+jsonNumber                        hue_6           none
+jsonStringSQError                 hue_5           none            reverse
+jsonSemicolonError                hue_5           none            reverse
+# }}}
+# Markdown {{{
+markdownUrl                       mono_3          none
+markdownBold                      hue_6           none            bold
+markdownItalic                    hue_6           none            bold
+markdownCode                      hue_4           none
+markdownCodeBlock                 hue_5           none
+markdownCodeDelimiter             hue_4           none
+markdownHeadingDelimiter          hue_5_2         none
+markdownH1                        hue_5           none
+markdownH2                        hue_5           none
+markdownH3                        hue_5           none
+markdownH3                        hue_5           none
+markdownH4                        hue_5           none
+markdownH5                        hue_5           none
+markdownH6                        hue_5           none
+markdownListMarker                hue_5           none
+# }}}
+# PHP {{{
+phpClass                          hue_6_2         none
+phpFunction                       hue_2           none
+phpFunctions                      hue_2           none
+phpInclude                        hue_3           none
+phpKeyword                        hue_3           none
+phpParent                         mono_3          none
+phpType                           hue_3           none
+phpSuperGlobals                   hue_5           none
+# }}}
+# Pug (formerly Jade) {{{
+pugAttributesDelimiter            hue_6           none
+pugClass                          hue_6           none
+pugDocType                        mono_3          none            italic
+pugTag                            hue_5           none
+# }}}
+# Python {{{
+pythonImport                      hue_3           none
+pythonBuiltin                     hue_1           none
+pythonStatement                   hue_3           none
+pythonParam                       hue_6           none
+pythonEscape                      hue_5           none
+pythonSelf                        mono_2          none            italic
+pythonClass                       hue_2           none
+pythonOperator                    hue_3           none
+pythonEscape                      hue_5           none
+pythonFunction                    hue_2           none
+pythonKeyword                     hue_2           none
+pythonModule                      hue_3           none
+pythonStringDelimiter             hue_4           none
+pythonSymbol                      hue_1           none
+# }}}
+# Ruby {{{
+rubyBlock                         hue_3           none
+rubyBlockParameter                hue_5           none
+rubyBlockParameterList            hue_5           none
+rubyCapitalizedMethod             hue_3           none
+rubyClass                         hue_3           none
+rubyConstant                      hue_6_2         none
+rubyControl                       hue_3           none
+rubyDefine                        hue_3           none
+rubyEscape                        hue_5           none
+rubyFunction                      hue_2           none
+rubyGlobalVariable                hue_5           none
+rubyInclude                       hue_2           none
+rubyIncluderubyGlobalVariable     hue_5           none
+rubyInstanceVariable              hue_5           none
+rubyInterpolation                 hue_1           none
+rubyInterpolationDelimiter        hue_5           none
+rubyKeyword                       hue_2           none
+rubyModule                        hue_3           none
+rubyPseudoVariable                hue_5           none
+rubyRegexp                        hue_1           none
+rubyRegexpDelimiter               hue_1           none
+rubyStringDelimiter               hue_4           none
+rubySymbol                        hue_1           none
+# }}}
+# Vim {{{
+vimCommand                        hue_3           none
+vimCommentTitle                   mono_3          none            bold
+vimFunction                       hue_1           none
+vimFuncName                       hue_3           none
+vimHighlight                      hue_2           none
+vimLineComment                    mono_3          none            italic
+vimParenSep                       mono_2          none
+vimSep                            mono_2          none
+vimUserFunc                       hue_1           none
+vimVar                            hue_5           none
+# }}}
+# XML {{{
+xmlAttrib                         hue_6_2         none
+xmlEndTag                         hue_5           none
+xmlTag                            hue_5           none
+xmlTagName                        hue_5           none
+# }}}
+# ZSH {{{
+zshCommands                       mono_1          none
+zshDeref                          hue_5           none
+zshShortDeref                     hue_5           none
+zshFunction                       hue_1           none
+zshKeyword                        hue_3           none
+zshSubst                          hue_5           none
+zshSubstDelim                     mono_3          none
+zshTypes                          hue_3           none
+zshVariableDef                    hue_6           none
+# }}}
+# Rust {{{
+rustExternCrate                   hue_5           none            bold
+rustIdentifier                    hue_2           none            
+rustDeriveTrait                   hue_4           none            
+SpecialComment                    mono_3          none            
+rustCommentLine                   mono_3          none            
+rustCommentLineDoc                mono_3          none            
+rustCommentLineDocError           mono_3          none            
+rustCommentBlock                  mono_3          none            
+rustCommentBlockDoc               mono_3          none            
+rustCommentBlockDocError          mono_3          none            
+# }}}
+# man {{{
+manTitle                      ->  String
+manFooter                         mono_3          none
+# }}}
+
+#endif

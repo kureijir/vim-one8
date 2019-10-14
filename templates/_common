@@ -138,6 +138,6 @@ if !(get(g:, '@optionprefix_plugin_hi_groups', 0) || get(g:, '@optionprefix_file
 endif
 endverbatim
 
-# Include: _plugins
-# Include: _filetypes
+Include: _plugins
+Include: _filetypes
 # }}}
