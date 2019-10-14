@@ -1,0 +1,143 @@
+# vim: set ft=colortemplate fdm=marker :
+
+Term colors: syntax_bg hue_5_2 hue_4 hue_6_2 hue_2 hue_3 hue_1 mono_1
+Term colors: mono_4 hue_5_2 hue_4 hue_6_2 hue_2 hue_3 hue_1 mono_1
+
+# GUI & 256-color specific {{{
+
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256
+  Normal              mono_1             none
+  Conceal             mono_4             none
+#else
+  Normal              mono_1             syntax_bg
+  Conceal             mono_4             syntax_bg
+#endif
+
+SignColumn          none               syntax_bg
+VertSplit           vertsplit          none
+CursorLineNr        mono_1             syntax_cursor
+FoldColumn          mono_3             syntax_cursor
+Comment             mono_3             none                 italic  
+CursorColumn        none               syntax_cursor
+CursorLine          none               syntax_cursor
+ColorColumn         none               syntax_cursor
+Folded              syntax_bg          mono_3        
+LineNr              mono_4             none
+MatchParen          hue_5              syntax_cursor        underline,bold
+NonText             mono_3             none
+Pmenu               mono_1             pmenu
+PmenuSel            mono_1             mono_4
+PmenuSbar           none               syntax_bg
+PmenuThumb          none               mono_1
+SpecialKey          special_grey       none
+StatusLine          mono_1             syntax_cursor
+StatusLineNC        mono_3             none
+TabLine             mono_1             syntax_bg
+TabLineFill         mono_3             visual_grey
+TabLineSel          syntax_bg          hue_2
+Visual              none               visual_grey
+WildMenu            mono_1             mono_3
+# }}}
+
+# Common {{{
+Variant: gui 256
+# Group             Fg                 Bg                   Attributes
+Cursor              none               syntax_accent
+CursorIM            none               none
+DiffAdd             hue_4              visual_grey
+DiffChange          hue_6              visual_grey
+DiffDelete          hue_5              visual_grey
+DiffText            hue_2              visual_grey
+Directory           hue_2              none
+IncSearch           hue_6              none
+ModeMsg             mono_1             none
+MoreMsg             mono_1             none
+Question            hue_2              none
+Search              syntax_bg          hue_6_2
+Title               mono_1             none                 bold
+VisualNOS           none               visual_grey
+WarningMsg          hue_5              none
+Whitespace          special_grey       none
+SpellBad            none               syntax_bg            undercurl
+SpellLocal          none               syntax_bg            undercurl
+SpellCap            none               syntax_bg            undercurl
+SpellRare           none               syntax_bg            undercurl
+
+# Other conventional group names (see `:help group-name`)
+Error               hue_5              syntax_bg            bold
+ErrorMsg            hue_5              syntax_bg
+Boolean             hue_6              none
+Constant            hue_4              none
+String              hue_4              none
+Character           hue_4              none
+Number              hue_6              none
+Float               hue_6              none
+Identifier          hue_5              none
+Function            hue_2              none
+Statement           hue_3              none
+Conditional         hue_3              none
+Repeat              hue_3              none
+Label               hue_3              none
+Operator            syntax_accent      none
+Keyword             hue_5              none
+Exception           hue_3              none
+PreProc             hue_6_2            none
+Include             hue_2              none
+Define              hue_3              none
+Macro               hue_3              none
+PreCondit           hue_6_2            none
+Type                hue_6_2            none
+StorageClass        hue_6_2            none
+Structure           hue_6_2            none
+Typedef             hue_6_2            none
+Special             hue_2              none
+SpecialChar         none               none
+Tag                 none               none
+Delimiter           none               none
+SpecialComment      none               none
+Debug               none               none
+Underlined          none               none                 underline
+Ignore              none               none
+Todo                hue_3              syntax_bg
+# }}}
+
+# Italics {{{
+verbatim
+if !get(g:, '@optionprefix_italicize_strings', 1)
+  hi Special gui=NONE cterm=NONE
+  hi String gui=NONE cterm=NONE
+endif
+endverbatim
+# }}}
+
+# Additional highlight groups {{{
+# Useful for custom status lines
+NormalMode            hue_4       syntax_bg     reverse
+InsertMode            hue_2       syntax_bg     reverse
+ReplaceMode           hue_5       syntax_bg     reverse
+VisualMode            hue_3       syntax_bg     reverse
+CommandMode           hue_1       syntax_bg     reverse
+Warnings              hue_6       syntax_bg     reverse
+# }}}
+
+# NeoVim terminal colors {{{
+TermCursor        -> Cursor
+TermCursorNC         syntax_bg            mono_1
+# }}}
+
+# Extra highlight groups {{{
+Variant: gui 256
+
+verbatim
+if !(get(g:, '@optionprefix_plugin_hi_groups', 0) || get(g:, '@optionprefix_filetype_hi_groups', 0))
+ finish
+endif
+endverbatim
+
+# Include: _plugins
+# Include: _filetypes
+# }}}
