@@ -1,0 +1,25 @@
+# vim: set ft=colortemplate :
+
+# Color palette for dark background
+Color:  mono_1            #abb2bf     249
+Color:  mono_2            #828997     245
+Color:  mono_3            #5c6370     241
+Color:  mono_4            #4b5263     240
+Color:  hue_1             #56b6c2     73      Cyan
+Color:  hue_2             #61afef     75      Blue
+Color:  hue_3             #c678dd     176     Magenta
+Color:  hue_4             #98c379     108     Green
+Color:  hue_5             #e06c75     168     Red
+Color:  hue_5_2           #be5046     131     Red
+Color:  hue_6             #d19a66     173     Yellow
+Color:  hue_6_2           #e5c07b     180     Yellow
+Color:  syntax_bg         #282c34     236
+Color:  syntax_gutter     #636d83     60
+Color:  syntax_cursor     #2c323c     237
+Color:  syntax_accent     #528bff     69      Blue
+Color:  vertsplit         #181a1f     234
+Color:  special_grey      #3b4048     237
+Color:  visual_grey       #3e4452     238
+Color:  pmenu             #333841     237
+
+Include: _common
